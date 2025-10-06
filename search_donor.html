@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Donor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: #c62828;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      width: 50%;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #c62828;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #c62828;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a81f1f;
+    }
+    .results {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #c62828;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .back-link a {
+      color: #c62828;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Blood Donation Management System</h2>
+  </div>
+
+  <div class="container">
+    <h2>Search Donor</h2>
+    <form>
+      <label for="blood_group">Blood Group:</label>
+      <select id="blood_group" name="blood_group" required>
+        <option value="">--Select--</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" placeholder="Enter City">
+
+      <button type="submit">🔍 Search</button>
+    </form>
+
+    <div class="results">
+      <h3>Sample Results</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Blood Group</th>
+          <th>City</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>Ramesh Kumar</td>
+          <td>O+</td>
+          <td>Chennai</td>
+          <td>9876543210</td>
+        </tr>
+        <tr>
+          <td>Anitha Devi</td>
+          <td>B+</td>
+          <td>Coimbatore</td>
+          <td>9876501234</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">⬅ Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
